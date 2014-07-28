@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Ejemplo seguimiento con cámara en un escenario</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" href="css/camara.css" />
+	</head>
+
+	<body>
+			<header id="cabeceraHeader">
+				<h1 id="tituloCabecera">Ejemplo seguimiento con cámara en un escenario</h1>
+			</header>
+			<nav id="menu">
+				<p id="cabecera">
+					Utiliza las teclas direccionales, funciona solamente en PC's
+				</p>
+				<p>
+					<a href="http://www.otroblogdetecnologias.blogspot.com/"> http://www.otroblogdetecnologias.blogspot.com </a>
+				</p>				
+			</nav>
+			<div id="main">
+				<div id="field">
+					<canvas id="canvasScreen" width="800" height="450"></canvas>
+				</div>
+				<div id="scores">
+					<p>Es un ejemplo simple, incluye:<br>
+					<br>
+						*Rotación de imagen.<br>
+						*Avance en direcciones.<br>
+						*Utilización de la técnica de seguimiento con cámara. <br>
+					<br>
+					   La rotación, se realiza utilizando funciones trigonométricas para calcular
+					   coordenadas x e y.<br>
+					<br>
+					   La técnica de la cámara, permite mostrar una porción 
+					   dentro de un escenario mucho mas grande.
+					<br>
+					   No se incluyen colisiones.					   
+					</p>
+				</div>				
+			</div>
+
+			<footer>
+				<p id="pieFooter">
+					<a href="http://www.navegantes.com.py/"> http://www.navegantes.com.py </a>										
+				</p>
+			</footer>
+
+		<script type="text/javascript" src="js/camara.js"></script>
+	</body>
+</html>
