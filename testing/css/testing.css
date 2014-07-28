@@ -1,0 +1,104 @@
+@font-face {
+	font-family: News Cycle;
+	src: url('../fonts/NewsCycle-Regular.eot');
+	src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf');
+}
+
+html {
+	background: blue;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: normal .80em arial, sans-serif;
+	color: black;
+	height:100%;
+}
+
+header {
+	width: 100%;
+	height: 5%;
+	font: 50% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-align: center;
+	background: #4CA20B;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	border: #FFFFFF solid 1px;
+	border-radius: 7px 7px 7px 7px;
+	color: #FFFFFF;
+}
+
+nav {
+	width: 100%;
+	height: 5%;
+	font: 60% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-align: center;
+	background: linear-gradient(#ffffff, #FFD800);
+	border: #FFFFFF solid 1px;
+	border-radius: 7px 7px 7px 7px;
+	color: #FFFFFF;
+}
+
+footer {
+	width: 100%;
+	height: 3%;
+	font: 50% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-align: center;
+	background: #4CA20B;
+	border: #FFFFFF solid 1px;
+	border-radius: 7px 7px 7px 7px;
+	color: #FFFFFF;
+}
+
+#main {
+	width: 100%;
+	height: 85%; 
+	font: 70% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-align: center;
+	background: yellow;
+	border: #FFFFFF solid 1px;
+	border-radius: 7px 7px 7px 7px;
+	color: #FFFFFF;
+}
+
+#field {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	background:#E9E9E9;
+	border: #FFFFFF solid 1px;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px;
+	color: black;
+}
+
+
+
+button{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: #FFFFFF;
+	padding: 1px 1px;
+	text-align: center;
+	background: linear-gradient(#4CA20B, #506651);
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.5);	
+	border: 2px solid #000;
+	cursor: pointer;
+	border-radius: 10px;
+	user-select: none;
+}
+
+button:hover {
+	background: linear-gradient(#acc7a3, #506651);
+}
+button:active {
+	background: linear-gradient(#858565, #c5c9a9);
+}
+
+

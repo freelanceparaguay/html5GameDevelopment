@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>'Testing Screen'</title>
+		<meta name="description" content="" />
+		<!--responsive mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" href="css/testing.css"/>
+		<!-- enlaces a jquery-->
+		<link href="css/le-frog/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/modernizr.custom.87289.js"></script>		
+
+	</head>
+
+	<body>
+		<header id="headerPage">
+			<h1 id="headerTitle">'Testing Screen'</h1>
+		</header>
+		<nav id="menu">
+			<button id="BTN_NEW">
+				RELOAD
+			</button>
+		</nav>
+		<div id="main">
+			<div id="field">
+				<table>
+					<tr>
+						<p>It proves resolutions screens and mouse events, keyboard and touch</p>
+					</tr>
+					<tr>
+						<td><label>User Agent</label></td>
+					</tr>
+					<tr>
+						<td><p id="userAgent1">0</p></td>						
+					</tr>
+					<tr>
+						<td><label>Screen Size</label></td>
+						<td><p id="xSize">0</p></td>						
+					</tr>
+					<tr>
+						<td><label>Total Mouse Clicks</label></td>
+						<td><p id="mouseClicks">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Total Touch Clicks</label></td>
+						<td><p id="touchClicks">0</p></td>
+					</tr>
+					<tr>
+						<td><label>X Pointer</label></td>
+						<td><p id="axisX">0</p></td>
+					</tr>							
+					<tr>	
+						<td><label>Y Pointer</label></td>
+						<td><p id="axisY">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event Type</label>
+						<td><p id="eventType">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event Key Code</label>
+						<td><p id="eventKeyCode">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event CharCode()</label></td>
+						<td><p id="eventCharCode">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event Char Pulsed</label></td>
+						<td><p id="eventCharPulsed">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event Alt Key</label></td>
+						<td><p id="eventAltKey">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event Shift Key</label></td>
+						<td><p id="eventShiftKey">0</p></td>
+					</tr>
+					<tr>
+						<td><label>Event Control Key</label></td>
+						<td><p id="eventCtrlKey">0</p></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<footer>
+			<p>
+				<a href="http://www.otroblogdetecnologias.blogspot.com/"> http://www.otroblogdetecnologias.blogspot.com </a>
+			</p>
+		</footer>
+
+		<div id="dialogBegin" title="Reload">
+			<h2>Reload</h2>
+			<p>
+				Reload page				
+				<br>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="js/testing.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#dialogBegin").dialog({
+					autoOpen : false,
+					modal : true,
+					resizable : false,
+					width : "auto",
+					buttons : {
+						"Reload Page" : function() {
+							$(this).dialog("close");
+							location.reload();
+						}
+					}
+				});
+				$("#BTN_NEW").on("click", function() {
+					$("#dialogBegin").dialog("open");
+
+				});
+
+			});
+		</script>
+
+	</body>
+</html>
+
