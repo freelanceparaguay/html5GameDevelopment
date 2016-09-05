@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>'Tatu .vs. Bugs 3.0'</title>
+		<meta name="description" content="" />
+		<!--responsive mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=no" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" href="css/tatuvsbugsmobile3.css"/>
+		<!-- enlaces a jquery-->
+		<link href="css/le-frog/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/modernizr.custom.87289.js"></script>		
+
+	</head>
+
+	<body>
+		<header id="headerPage">
+			<h1 id="headerTitle">'Tatu .vs. Bugs 3.0'</h1>
+		</header>
+		<nav id="menu">
+			<button class="buttonMenu" id="BTN_NEW">
+				NEW
+			</button>
+			<button class="buttonMenu" id="BTN_HELP">
+				HELP
+			</button>
+			<button class="buttonMenu" id="BTN_ABOUT" value="ABOUT">
+				ABOUT
+			</button>
+		</nav>
+		<div id="main">
+			<div id="information">
+				<table>
+					<tr>
+						<td><img src="images/screen/lives.png" alt="Lives" width="20" height="20"></td>
+						<td><label>Strength</label>
+						<p id="strength">0</p></td>
+						<td><img src="images/screen/bughunted.png" alt="Bugs Hunted" width="20" height="20"></td>
+						<td><p id="score">0</p><label>/</label><p id="totalBug">0</p></td>
+						<td><img src="images/screen/armor.png" alt="Armor" width="20" height="20"></td>
+						<td><label>Armor</label>
+						<p id="armor">0</p></td>
+						<td><img src="images/screen/energy.png" alt="Energy" width="20" height="20"></td>
+						<td><label>Energy</label>
+						<p id="energy">0</p></td>
+						<td><img src="images/screen/speed.png" alt="Speed" width="20" height="20"></td>
+						<td><label>Speed X</label>
+						<p id="speed">0</p></td>
+					</tr>
+				</table>
+			</div>
+			<div id="field">
+				<canvas id="canvasScreen" width="800" height="300"></canvas>
+			</div>
+			<div id="controls">
+				<table id="tableControls">
+					<tr>
+						<td class="tableControlsCells" >
+						<table id="tableControlsArrows">
+							<tr>
+								<td class="tableControlsArrowssCells">.</td>
+								<td class="tableControlsArrowssCells">
+								<button class="buttonControls" id="BTN_UP">&and;</button></td>
+								<td class="tableControlsArrowssCells">.</td>
+							</tr>
+							<tr>
+								<td class="tableControlsArrowssCells">
+								<button class="buttonControls" id="BTN_LEFT">&lt;</button></td>
+								<td class="tableControlsArrowssCells">
+								<button class="buttonControls" id="BTN_DOWN">&or;</button></td>
+								<td class="tableControlsArrowssCells">
+								<button class="buttonControls" id="BTN_RIGHT">&gt;</button></td>
+
+							</tr>
+						</table></td>
+						<td class="tableControlsCells">
+						<button class="buttonControlsPush" id="BTN_PUSH">PUSH</button></td>
+
+					</tr>
+
+				</table>
+			</div>
+		</div>
+		<footer>
+			<p>
+				FOOTER
+			</p>
+		</footer>
+
+		<div id="dialogAbout" title="About 'The Giant Armadillo .vs. Bugs'">
+			<h2>The giant armadillo (Priodontes maximus)</h2>
+			<p class="dialogPar">
+				<br>
+				<br>
+				This species is endangered, PLEASE DO SOMETHING!!!.
+				<br>
+				<br>
+				The giant armadillo (Priodontes maximus), colloquially tatou, ocarro,
+				<br>
+				tatu-canastra or tatú carreta, is the largest living species of armadillo
+				<br>
+				(although the extinct glyptodonts were much larger). It was once found
+				<br>
+				widelythroughout the tropical forests of eastern South America and now
+				<br>
+				ranges throughout varied habitat as far south as northern Argentina.
+				<br>
+				This species is considered vulnerable to extinction.
+				<br>
+				The giant armadillo prefers termites and some ants as prey, and often
+				<br>
+				consumes the entire population of a termite mound. It also has been
+				<br>
+				known to prey upon worms, larvae and larger creatures, such as spiders
+				<br>
+				and snakes, and plants. At least one zoo park, in Villavicencio, Colombia
+				<br>
+				– Los Ocarros – is dedicated to this animal.
+				<br>
+				For more information, please refer to Wikipedia at
+				<br>
+				<a href="http://en.wikipedia.org/wiki/Priodontes_maximus"> http://en.wikipedia.org/wiki/Priodontes_maximus </a>
+				<br>
+				<br>
+				Techniques used in this demo:
+				<br>
+				* Use with camera tracking technique.
+				<br>
+				* Using sprites.
+				<br>				
+				* Using mathematics to screen positioning.
+				<br>
+				* Basic engine collisions.
+				<br>
+				* Detect mouse/touch events in buttons.
+				<br>
+				* Responsive design.
+				<br>
+				Made using HTML5 / CSS3 / JavaScript.
+				<br>				
+				* Using Modernizr <a href="http://modernizr.com/"> Modernizr</a> 
+				<br>
+				* Using Jquery. <a href="http://jqueryui.com/"> Jquery </a>
+				<br>
+				Programmed by Juan Carlos Miranda February 2014.
+				Version 2.0 19/03/2014.
+				<a href="http://otroblogdetecnologias.blogspot.com">http://otroblogdetecnologias.blogspot.com</a>
+				<br>
+
+			</p>
+		</div>
+
+		<div id="dialogHelp" title="Help Help Heeeelp!!">
+			<h2>Help</h2>
+			<p>
+				Move the Tatu (giant armadillo) with the ARROWS KEYS.
+				<br>
+				Try to hunt insects with the Tatu.
+				<br>
+				The insects will try to eliminate you.
+				<br>
+				Hunt them using the SPACEBAR.
+				<br>
+				Search a TERERE ICON <img src="images/screen/terere1.png" alt="Energy" width="40" height="40"> and a ARMOR ICON <img src="images/screen/armor.png" alt="Energy" width="40" height="40">and to reinforce your strength
+				<br>
+				Try to catch  a CAR SPEED ICON <img src="images/screen/speed.png" alt="Speed" width="40" height="40">to increment your speed
+				<br>
+			</p>
+		</div>
+
+		<div id="dialogBegin" title="Begin to play">
+			<h2>Help</h2>
+			<p>
+				Move the Tatu (giant armadillo) with the ARROWS KEYS.
+				<br>
+				Try to hunt insects with the Tatu.
+				<br>
+				The insects will try to eliminate you.
+				<br>
+				Hunt them using the SPACEBAR.
+				<br>
+				Search a terere icon and a armor icon and to reinforce your strength
+				<br>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="js/tatuvsbugs3.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#dialogAbout").dialog({
+					autoOpen : false,
+					modal : true,
+					resizable : false,
+					width : "auto",
+				});
+				$("#dialogHelp").dialog({
+					autoOpen : false,
+					modal : true,
+					resizable : false,
+					width : "auto",
+				});
+				$("#dialogBegin").dialog({
+					autoOpen : false,
+					modal : true,
+					resizable : false,
+					width : "auto",
+					buttons : {
+						"Plaaaaayyy!" : function() {
+							$(this).dialog("close");
+							location.reload();
+						}
+					}
+				});
+
+				$("#BTN_ABOUT").on("click", function() {
+					$("#dialogAbout").dialog("open");
+				});
+				$("#BTN_HELP").on("click", function() {
+					$("#dialogHelp").dialog("open");
+				});
+				$("#BTN_NEW").on("click", function() {
+					$("#dialogBegin").dialog("open");
+
+				});
+
+			});
+		</script>
+
+	</body>
+</html>
+
